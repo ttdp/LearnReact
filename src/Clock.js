@@ -28,10 +28,28 @@ class Clock extends Component {
         return (
             <div>
                 <h1>{this.state.date.toLocaleTimeString()}</h1>
+                <SubClock date={this.state.date} />
+                <SubSubClock date={this.state.date} />
             </div>
         )
     }
 
+}
+
+class SubClock extends Component {
+
+    render() {
+        const {date} = this.props
+
+        return (
+            <h2>{date.toLocaleTimeString()}</h2>
+        )
+    }
+
+}
+
+function SubSubClock(props) {
+    return <h3>{props.date.toLocaleTimeString()}</h3>
 }
 
 export default Clock
