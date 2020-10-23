@@ -2,6 +2,7 @@ import React from 'react'
 import logo from './logo.svg'
 import './App.css'
 import Clock from './Clock'
+import LoginControl from './LoginControl'
 
 function Welcome(props) {
     return <h1>Welcome to {props.name}</h1>
@@ -12,6 +13,7 @@ function App() {
         <div className="App">
             <Welcome name="TTDP" />
             <Clock />
+            <LoginControl />
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
