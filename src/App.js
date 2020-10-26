@@ -5,6 +5,7 @@ import Clock from './Clock'
 import LoginControl from './LoginControl'
 import NumberList from './List'
 import {NameForm, EssayForm, FlavorForm, Reservation} from './Form'
+import Calculator from './Calculator'
 
 function Welcome(props) {
     return <h1>Welcome to {props.name}</h1>
@@ -14,13 +15,14 @@ function App() {
     return (
         <div className="App">
             <Welcome name="TTDP" />
-            <NameForm />
+            <Calculator />
+            {/* <NameForm />
             <EssayForm />
             <FlavorForm />
             <Reservation />
             <Clock />
             <LoginControl />
-            <NumberList numbers={[1,2,3,4,5]} />
+            <NumberList numbers={[1,2,3,4,5]} /> */}
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
